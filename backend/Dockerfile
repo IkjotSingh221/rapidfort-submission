@@ -1,5 +1,6 @@
 # Use an official Python runtime as a parent image
 FROM python:3.11-alpine
+RUN apk add --no-cache libreoffice libreoffice-writer
 
 # Set the working directory in the container
 WORKDIR /
